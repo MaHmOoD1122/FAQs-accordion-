@@ -6,5 +6,5 @@ I made this project based on challenge on frontend mentor named 'FAQs accordtion
 - CSS
 - JavaScript
 
- ### Link of the project 
+ ## Link of the project 
  https://mahmood1122.github.io/FAQs-accordion-/
