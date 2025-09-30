@@ -2,13 +2,15 @@
 
 const buttons = document.querySelectorAll(".btn");
 const paragrapghs = document.querySelectorAll(".paragraph");
-buttons.forEach((btn, i) => {
-  btn.addEventListener("click", function () {
-    if (btn.src.includes("icon-plus.svg")) {
-      btn.src = "images/icon-minus.svg";
-    } else {
-      btn.src = "images/icon-plus.svg";
-    }
+const rowHeader = document.querySelectorAll(".row-header");
+
+rowHeader.forEach((header, i) => {
+  header.addEventListener("click", function () {
     paragrapghs[i].classList.toggle("hidden");
+    if (buttons[i].src.includes("icon-plus.svg")) {
+      buttons[i].src = "images/icon-minus.svg";
+    } else {
+      buttons[i].src = "images/icon-plus.svg";
+    }
   });
 });
